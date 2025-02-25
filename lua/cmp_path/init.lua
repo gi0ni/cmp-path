@@ -19,7 +19,7 @@ local defaults = {
   trailing_slash = false,
   label_trailing_slash = true,
   get_cwd = function(params)
-    return vim.fn.expand(('#%d:p:h'):format(params.context.bufnr))
+    return vim.fn.getcwd()
   end,
 }
 
